@@ -1,0 +1,181 @@
+/*
+*/
+
+
+/* 1. General */ 
+body{ background-color:#e4e6e5; }
+body, input, button, select, textarea, .navbar-search .search-query { font-family: 'Droid Sans', sans-serif; color:#444}
+body, li, address{ line-height:24px }
+hr{ margin:30px 0px; border-top:1px dashed #ccc; border-bottom:none}
+ul, ol{ margin-left:17px}
+li{ list-style: square}
+::selection { background: #66c6f8; }
+::-moz-selection { background: #66c6f8; }
+.go-to-top{ background: #d6d6d4; position:fixed; right:0px; top:50%; margin-top:-20px; padding:20px 15px; font-weight:bold; font-size:20px; text-transform:uppercase; display:none}
+h4 { 
+  font-weight: normal;
+  padding: 15px 0px;
+}
+/* 2. Navigation */
+.navbar-inverse .brand { color:#fff}
+.navbar-inner .container { position:relative; overflow:visible }
+.navbar-inner .container .brand{ position:absolute; }
+.navbar .nav > li { line-height: 25px; list-style:none }
+.navbar .nav > li a { outline:none}
+.navigation .nav li.active,.navigation .nav li.active>a  { background: #08c}
+.navbar .nav > li.first a, .navbar .nav > li.first a:hover { background:none }
+.navbar .brand { padding-top:10px; padding-bottom:10px; font-size:24px}
+.navbar-inverse .navbar-inner {background-color: #444;
+background-image: -moz-linear-gradient(top,#444,#111);
+background-image: -webkit-gradient(linear,0 0,0 100%,from(#444),to(#111));
+background-image: -webkit-linear-gradient(top,#444,#111);
+background-image: -o-linear-gradient(top,#444,#111);
+background-image: linear-gradient(to bottom,#444,#111);
+background-repeat: repeat-x;
+border-color: #252525;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222',endColorstr='#ff111111',GradientType=0);
+}
+/*.navigation .current-band { height: 5px; position: absolute; z-index: 0; background: #08c;}*/
+.navbar-inverse .btn-navbar { color: #fff; text-shadow: none; background-color: #333; background-image: none; border-radius:0px; border:none; margin-right:15px; margin-top:6px }
+
+/* 3. Hero */
+.hero { background-color:#f3f3f3; margin-bottom:30px; border-bottom:1px solid #d5d5d5; display:none;
+background-image: -moz-linear-gradient(top,#f3f3f3,#dddddd);
+background-image: -webkit-gradient(linear,0 0,0 100%,from(#f3f3f3),to(#dddddd));
+background-image: -webkit-linear-gradient(top,#f3f3f3,#dddddd);
+background-image: -o-linear-gradient(top,#f3f3f3,#dddddd);
+background-image: linear-gradient(to bottom,#f3f3f3,#dddddd);
+background-repeat: repeat-x;}
+.hero .hero-unit{ background-color: transparent; margin-bottom:0px; padding-top:110px; position:relative; padding-bottom: 30px;}
+/*.hero-unit .span3{ float:right }*/
+.hero-unit h1{ margin-top:0px; line-height:1; font-size:50px }
+.hero-unit h2{ font-size:24.5px}
+.hero-unit address{ line-height:30px; margin-top:2px}
+.hero-unit abbr[title], .hero-unit abbr[data-original-title]{  display:inline-block; text-align:center; background: url(../images/bg-perpendicular.png) repeat; border-bottom:none; line-height:24px}
+.hero-unit .avatar{  text-align: center; }
+.hero-unit .avatar>img { border-radius: 100px; }
+
+/* 4. Section */
+section > .row { margin-bottom:30px }
+section > .row > .span4{ text-align:right }
+section > .row > .span4 h3{ margin:0px 0px 8px; line-height:34px; font-size:20.5px }
+section > .row > .span8 h2{ margin-bottom:15px; }
+section > .row > .span8 h2 span{  background: url(../images/bg-perpendicular.png) repeat #d6d6d4; height:17px; display:inline-block; width:24px; height:24px; margin-right:5px }
+section > .row > .span4 > h4 {background: url(../images/bg-perpendicular.png) repeat; padding:2px 4px; width:auto; display:inline }
+section > .row > .span4 > h5 { font-size:15.5px; margin-top:8px; color:#08c }
+
+
+/* 5. Footer */
+footer{ background-color:#d4d6d5; padding:15px 0px 5px; border-top:1px solid #ccc }
+
+
+/* 6. Responsive */
+
+/* Large desktop */
+
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+	.hero .hero-unit h1{ font-size:42px}
+	.hero .hero-unit h2{ font-size:28px}
+	address{ font-size:16px}
+	.nav-collapse .nav>li{ float:left}
+	.nav-collapse, .nav-collapse.collapse{ overflow:hidden; height:auto}
+	.navbar-fixed-top{ margin:0px}
+	.navbar-fixed-top, .navbar-fixed-bottom{ position:fixed}
+	.go-to-top{ display:none}
+	.navbar-inverse .nav-collapse .nav > li > a:hover, .navbar-inverse .nav-collapse .nav > li > a:focus, .navbar-inverse .nav-collapse .dropdown-menu a:hover, .navbar-inverse .nav-collapse .dropdown-menu a:focus { background-color:transparent}
+	.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner{ padding:0px}
+	.nav-collapse .nav>li>a, .nav-collapse .dropdown-menu a{ font-weight:normal}
+	.navigation .nav li.active a, .navigation .nav li.active > a:hover, .navigation .nav .active > a:focus, .navigation .nav li a:hover{ color:#fff}
+	.hero .hero-unit{ padding:110px 0px 30px}
+.navbar .btn-navbar {
+  display: none;
+}	
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+	.hero .hero-unit{ padding:20px 20px 0px}
+	.hero-unit .avatar{ margin-bottom:20px }
+	.navbar-fixed-top{ margin:0px}
+	section > .row > .span8 h2, section > .row > .span4 h3, section > .row > .span4 > h4{ margin-bottom:10px }
+	section > .row > .span4 > h4{ display:block}
+	section > .row > .span4{ text-align:left}
+	.nav-collapse .nav>li>a, .nav-collapse .dropdown-menu a{ font-weight:normal; background:none}
+/*	.nav-collapse, .nav-collapse.collapse{ //width:100%}*/
+	.navbar-inner .container, .nav-collapse, .nav-collapse.collapse{ overflow:visible}
+	.span6 .thumbnail{ width:356px}
+	.span4 .thumbnail{ width:220px}
+	.navigation{ display:none}
+	.navigation .nav li.active a, .navigation .nav li.active > a:hover, .navigation .nav .active > a:focus{ background-image:none;color:#fff;}
+	.navbar-fixed-top{ position:fixed }
+	.navbar .nav{ z-index:6000; background-color:#111; margin-right:-5px; }
+	.navbar .nav a:hover{ color:#fff!important}
+	.hero-unit h1{ font-size:43px }
+	.hero{ margin-top:73px}
+	
+	.me-details { text-align: center;}
+ }
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+	.span6 .thumbnail, .span6 .thumbnail img{ width:220px}
+	.span4 .thumbnail{ width:220px}
+	.social li a{ width:39px; }
+	.social li.facebook a{ background-position: -2px 0;}
+	.social li.youtube a{ background-position: -54px 0;}
+	.social li.twitter a{ background-position: -108px 0}
+	.social li.linked a{ background-position: -168px 0}
+	.social li.google a{ background-position: -222px 0}
+	.social li.pinterest a{ background-position: -279px 0}
+	.social li.facebook a:hover{ background-position: -2px -50px;}
+	.social li.youtube a:hover{ background-position: -54px -50px;}
+	.social li.twitter a:hover{ background-position: -108px -50px;}
+	.social li.linked a:hover{ background-position: -168px -50px;}
+	.social li.google a:hover{ background-position: -222px -50px; }
+	.social li.pinterest a:hover{ background-position: -279px -50px;}
+	.page .txt{ top:100%; width:auto}
+	
+}
+
+@media print {
+	h1, h2, h3, h4{line-height:30px!important; margin:0px 0px 10px 0px!important}
+    .navbar, .go-to-top{ display:none!important}
+	.hero-unit h1, .hero-unit h2, .hero-unit h3{ line-height:40px!important; margin:0px 0px 15px 0px!important }
+	.hero-unit { margin-top:0px; position:relative; padding-top:0px!important }
+	.hero-unit .avatar{ padding:0px}
+	.hero-unit .span2{ position:absolute; top:0px; left:0px; }
+	.hero-unit .span6, .hero-unit .span4 { margin-left:150px; }
+	.hero-unit .span4 { margin-bottom:30px}
+	.social{ display:none}
+	section > .row > .span4{ text-align:left}
+	section > .row > .span4 h3 { margin:0px}
+	section > .row > .span4 > h4, section > .row > .span4 > h5 { display:inline}
+	.row-fluid .thumbnails > li { list-style:none;}
+	.row-fluid .thumbnails > li.span4 { display:inline;}
+	.row-fluid .thumbnails > li.span4 a img { width:30%}
+	.row-fluid .thumbnails li a { padding:0px; border:none}
+	.row-fluid .thumbnails li .info { position:static; padding:0px}
+	.row-fluid .thumbnails li a .hover, .row-fluid .thumbnails li a .info { display:none }
+	.progress .bar {border-right:solid 10px #ccc!important}
+	.contact .span4 form { display:none}
+	
+	
+}
+
+
+/* Black and white */
+body{ color:#000; background-color:#fff }
+.hero{ background-color:#ECE9E6; border-bottom-color:#eee}
+.navbar-inverse .navbar-inner {
+background-color: #000;
+background-image: -moz-linear-gradient(top,#000,#111);
+background-image: -webkit-gradient(linear,0 0,0 100%,from(#000),to(#111));
+background-image: -webkit-linear-gradient(top,#000,#111);
+background-image: -o-linear-gradient(top,#000,#111);
+background-image: linear-gradient(to bottom,#000,#111);
+background-repeat: repeat-x;
+border-color: #252525;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#111111',GradientType=0);
+}
